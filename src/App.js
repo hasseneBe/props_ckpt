@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import Profile from './profile/profile';
+import React from 'react';
 import './App.css';
 
 function App() {
+  const handleName=x=> alert(x)
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+<Profile fullName='Mark Zuckerberg' 
+          bio='Mark Elliot Zuckerberg est né dans la ville de White Plains, dans l État de New York le 14 mai 1984. Il a trois sœurs dont une aînée, Randi et deux cadettes, Arielle et Donna. Dès le collège, à l âge de 12 ans, il s initie à la programmation informatique, une passion qui lui vient de son père.' 
+          profession='CEO Facebook' imgSource='image.jpg' name={handleName}/> 
     </div>
   );
 }
